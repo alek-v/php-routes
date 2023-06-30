@@ -64,7 +64,7 @@ class Route {
     /**
      * Detect if variable is a Closure
      */
-    function isClosure($t): bool
+    private function isClosure($t): bool
     {
         if (($t instanceof \Closure) == true) {
             return true;
