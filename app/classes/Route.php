@@ -46,7 +46,7 @@ class Route {
         }
 
         if (!$this->isClosure($request_method[$request_uri]) && method_exists($request_method[$request_uri][0], $request_method[$request_uri][1])) {
-            echo call_user_func([$request_method[$request_uri][0], $request_method[$request_uri][1]]);
+            echo call_user_func([new $request_method[$request_uri][0], $request_method[$request_uri][1]]);
             return;
         }
 
@@ -59,7 +59,6 @@ class Route {
     private function pageNotFound()
     {
         echo 'Page not found';
-        return;
     }
 
     /**

@@ -6,8 +6,8 @@ use App\Classes\Controller;
 use App\Models\Quote;
 
 class QuoteController extends Controller {
-    public static function index()
+    public function index()
     {
-        return self::view('quotes', ['content' => Quote::index()]);
+        return $this->view('quotes', ['content' => Quote::index()]);
     }
 }
