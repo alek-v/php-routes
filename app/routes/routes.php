@@ -1,7 +1,7 @@
 <?php
 
 use App\Classes\Route;
-use App\Controllers\Quote;
+use App\Controllers\QuoteController;
 
 $routes = new Route;
 
@@ -17,4 +17,4 @@ $routes->get('cat', function() {
     return 'Meow';
 });
 
-$routes->get('quote', [Quote::class, 'index']);
+$routes->get('quote', [QuoteController::class, 'index']);

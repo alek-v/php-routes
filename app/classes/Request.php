@@ -10,6 +10,9 @@ class Request {
         }
     }
 
+    /**
+     * Handle key values
+     */
     private function setKey($key)
     {
         return strtolower($key);

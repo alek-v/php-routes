@@ -2,9 +2,11 @@
 
 namespace App\Controllers;
 
-class Quote {
+use App\Models\Quote;
+
+class QuoteController {
     public static function index()
     {
-        return 'Quote no 1.';
+        return Quote::index();
     }
 }
