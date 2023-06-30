@@ -59,6 +59,7 @@ class Route {
     private function pageNotFound()
     {
         echo 'Page not found';
+        exit;
     }
 
     /**
