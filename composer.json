@@ -3,7 +3,8 @@
         "psr-4": {
             "App\\Classes\\": "app/classes/",
             "App\\Controllers\\": "app/controllers/",
-            "App\\Models\\": "app/models/"
+            "App\\Models\\": "app/models/",
+            "App\\Contracts\\": "app/contracts/"
         }
     }
 }

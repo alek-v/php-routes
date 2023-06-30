@@ -2,11 +2,12 @@
 
 namespace App\Controllers;
 
+use App\Classes\Controller;
 use App\Models\Quote;
 
-class QuoteController {
+class QuoteController extends Controller {
     public static function index()
     {
-        return Quote::index();
+        return self::view('quotes', ['content' => Quote::index()]);
     }
 }
